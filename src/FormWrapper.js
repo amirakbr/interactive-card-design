@@ -1,6 +1,6 @@
 const FormWrapper =() => {
      return (
-          <div className="flex flex-col gap-[1rem] mt-[25rem] sm:mt-[8rem] px-[5%] lg:px-[25%] lg:mt-[14rem] lg:ml-[2rem]">
+          <div className="flex flex-col gap-[1rem] mt-[25rem] sm:mt-[8rem] px-[5%] lg:pr-[25%] lg:mt-[14rem] lg:ml-[10rem]">
                <label className="flex flex-col gap-2 text-[1rem] font-bold items-center xsm:items-start">
                     CARDHOLDER NAME
                     <input type='text' className="w-full border-[.15rem] rounded-[.5rem]  py-2 px-4 focus:border-[#6f00ff] focus:outline-none focus:ring-0 outline-none" maxLength='15' placeholder="e.g. Jabe Applesed"/>
