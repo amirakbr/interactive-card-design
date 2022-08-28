@@ -1,5 +1,5 @@
-import Frontside from './cardFrontSide' ; 
-import Backside from './cardBackSide';
+import Frontside from './Card/FrontSide/cardFrontSide' ; 
+import Backside from './Card/BackSide/cardBackSide';
 const LeftSide = (props) => {
      return (
           <div className="md:h-[100vh] relative lg:flex lg:items-center h-[17rem] md:h-[auto] sm:relative w-full bg-mobile bg-no-repeat bg-cover bg-center">

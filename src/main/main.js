@@ -1,8 +1,8 @@
-import LeftSide from './leftSide';
-import FormWrapper from './FormWrapper';
+import LeftSide from './leftSide/leftSide';
+import FormWrapper from './Form/FormWrapper';
 import { useState } from 'react';
 const Main = (props) => {
-     const [isPassed , setIsPassed] = useState(1) 
+     const [isPassed , setIsPassed] = useState(0) 
      return (
           <main className='flex flex-col relative md:grid md:grid-cols-1fr2fr min-h-[100vh]' >
                <LeftSide fun={props.change} cardNum={props.cardNum}
