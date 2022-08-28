@@ -11,14 +11,18 @@ const FrontSide = (props) => {
                </div>
                <div className="flex flex-col gap-[1rem] text-white">
                     <p className="text-[1.5rem] text-center">
-                         {props.get[0]}{props.get[1]}{props.get[2]}{props.get[3]}{' '}{props.get[4]}{props.get[5]}{props.get[6]}{props.get[7]}{' '}{props.get[8]}{props.get[9]}{props.get[10]}{props.get[11]}
+                         {props.isPassed === 0 && props.cardNum !== " " && props.cardNum !== "" ? props.cardNum.split('').map((alph,index)=>(index%4===3?`${alph} `:`${alph}`)) : `0000 0000 0000 0000` }
                     </p>
                     <div className="flex justify-between text-[1.2rem]">
                          <p>
-                              Jane Blog
+                              {props.isPassed === 0 && props.get !== " " && props.get !== "" ? props.get.split('').map((alph,index)=>(alph.toUpperCase())) : 'JANE BLOG' }
                          </p>
                          <p>
-                              04/05
+                              <span>
+                                   {props.isPassed === 0 && props.Year !== "" ? `${props.Year}` : '00'}
+                              </span> / <span>
+                                   {props.isPassed === 0 && props.month !== "" ? `${props.month}` : '00'}
+                              </span> 
                          </p>
                     </div>
                </div>
