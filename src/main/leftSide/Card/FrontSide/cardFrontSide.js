@@ -11,17 +11,17 @@ const FrontSide = (props) => {
                </div>
                <div className="flex flex-col gap-[1rem] text-white">
                     <p className="text-[1.5rem] text-center">
-                         {props.isPassed === 0 && props.cardNum !== " " && props.cardNum !== "" ? props.cardNum.split('').map((alph,index)=>(index%4===3?`${alph} `:`${alph}`)) : `0000 0000 0000 0000` }
+                         {props.cardNum !== " " && props.cardNum !== "" ? props.cardNum.split('').map((alph,index)=>(index%4===3?`${alph} `:`${alph}`)) : `0000 0000 0000 0000` }
                     </p>
                     <div className="flex justify-between text-[1.2rem]">
                          <p>
-                              {props.isPassed === 0 && props.get !== " " && props.get !== "" ? props.get.split('').map((alph,index)=>(alph.toUpperCase())) : 'JANE BLOG' }
+                              {props.get !== " " && props.get !== "" ? props.get.split('').map((alph,index)=>(alph.toUpperCase())) : 'JANE BLOG' }
                          </p>
                          <p>
                               <span>
-                                   {props.isPassed === 0 && props.Year !== "" ? `${props.Year}` : '00'}
+                                   {props.Year !== "" ? `${props.Year}` : '00'}
                               </span> / <span>
-                                   {props.isPassed === 0 && props.month !== "" ? `${props.month}` : '00'}
+                                   {props.month !== "" ? `${props.month}` : '00'}
                               </span> 
                          </p>
                     </div>
