@@ -1,21 +1,8 @@
 import { getAllByText } from "@testing-library/react";
 import { getValue } from "@testing-library/user-event/dist/utils";
 import { useState } from "react";
-const FormWrapper =(props) => {
-     function handleReset() {
-          props.sefun(' ') ; 
-          props.setCardNum(' ') ; 
-          props.setMonth('00') ; 
-          props.setYear('00') ; 
-          props.setcvv('000') ; 
-          let inputs = document.querySelectorAll('input') ; 
-          inputs[0].value = '' ; 
-          inputs[1].value = '' ; 
-          inputs[2].value = '' ; 
-          inputs[3].value = '' ; 
-          inputs[4].value = '' ; 
-          props.setIsConfirmed(0) ; 
-     }
+import handleReset from "../utilities/handleReset";
+const FormWrapper =(props) => { 
      return (
           <div className="flex flex-col gap-[1rem] mt-[8rem] lg:ml-[15rem] px-[10%] lg:pl-[0%] lg:pr-[20%] lg:justify-center lg:ml-[14rem] mb-[2rem] max-w-[1000px] lg:mt-[auto] lg:mb-[auto] ">
                <label style={{display : props.isConfirmed === 0 ? 'flex' : 'none'}} className="flex flex-col gap-2 text-[1rem] font-bold items-center xsm:items-start">
